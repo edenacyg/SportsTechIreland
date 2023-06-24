@@ -1,0 +1,25 @@
+@tailwind base;
+
+[x-cloak] {
+	display: none !important;
+}
+
+@layer components {
+
+	.container {
+		@apply w-full px-4 mx-auto max-w-7xl;
+	}
+
+	.text-container {
+		@apply w-full px-4 mx-auto pl-80;
+	}
+
+	@media (max-width: 1700px) {
+		.text-container {
+		  padding-left: 15%;
+		}
+	}
+}
+
+@tailwind components;
+@tailwind utilities;
