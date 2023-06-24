@@ -38,11 +38,8 @@ export default {
 		copyPublicDir: true,
 		assetsDir: 'assets',
         rollupOptions: {
-			input: {
-				// main: path.resolve(__dirname, 'src/main.js'),
-				index: path.resolve(__dirname, 'src/index.html')
-			  }
-            // input: glob.sync(path.resolve(__dirname, 'src/**', '*.html'), { ignore: path.resolve(__dirname, 'src/layouts/**') })
+			index: path.resolve(__dirname, 'src/index.html')
+			// input: glob.sync(path.resolve(__dirname, 'src/**', '*.html'), { ignore: path.resolve(__dirname, 'src/layouts/**') })          
         },
     },
     plugins: [
